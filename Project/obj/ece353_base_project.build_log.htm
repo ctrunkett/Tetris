@@ -1,0 +1,128 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Clare Trunkett, University of Wisconsin-Madison, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+C:\Users\clare\Desktop\ECE\ECE353\TETRIS\TETRIS\Project\Project.uvprojx
+Project File Date:  12/10/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Project-F19'
+compiling images.c...
+compiling main.c...
+compiling project_hardware_init.c...
+project_hardware_init.c(98): warning:  #188-D: enumerated type mixed with another type
+  	NVIC_SetPriority(ADC_IM_MASK1, 2);
+project_hardware_init.c: 1 warning, 0 errors
+compiling gpio_port.c...
+..\drivers\c\gpio_port.c(82): warning:  #188-D: enumerated type mixed with another type
+         return 0;
+..\drivers\c\gpio_port.c: 1 warning, 0 errors
+compiling adc.c...
+compiling project_interrupts.c...
+compiling tetris_game_logic.c...
+tetris_game_logic.c(57): warning:  #177-D: variable "x_start"  was declared but never referenced
+  	int8_t x_start, y_start;
+tetris_game_logic.c(57): warning:  #177-D: variable "y_start"  was declared but never referenced
+  	int8_t x_start, y_start;
+tetris_game_logic.c(1110): warning:  #111-D: statement is unreachable
+  	return;
+tetris_game_logic.c(867): warning:  #177-D: variable "temp_highscore_swap"  was declared but never referenced
+  	uint8_t temp_highscore_swap;
+tetris_game_logic.c(869): warning:  #177-D: variable "x_touch"  was declared but never referenced
+  	uint16_t x_touch,y_touch;
+tetris_game_logic.c(869): warning:  #177-D: variable "y_touch"  was declared but never referenced
+  	uint16_t x_touch,y_touch;
+tetris_game_logic.c(870): warning:  #550-D: variable "touch_event"  was set but never used
+    uint8_t touch_event;
+tetris_game_logic.c(871): warning:  #177-D: variable "joystick_x"  was declared but never referenced
+  	uint8_t joystick_x, joystick_y;
+tetris_game_logic.c(871): warning:  #177-D: variable "joystick_y"  was declared but never referenced
+  	uint8_t joystick_x, joystick_y;
+tetris_game_logic.c(873): warning:  #177-D: variable "conv_count"  was declared but never referenced
+  	int8_t conv_count = -1; // start at -1 for first runthrough ADC
+tetris_game_logic.c: 10 warnings, 0 errors
+compiling pc_buffer.c...
+compiling i2c.c...
+compiling uart.c...
+..\drivers\c\uart.c(184): warning:  #188-D: enumerated type mixed with another type
+         return 0;
+..\drivers\c\uart.c: 1 warning, 0 errors
+compiling spi.c...
+compiling accel.c...
+compiling eeprom.c...
+compiling timers.c...
+compiling ft6x06.c...
+compiling launchpad_io.c...
+assembling ws2812b.s...
+assembling startup_TM4C123.s...
+compiling ps2.c...
+compiling spi_select.c...
+compiling serial_debug.c...
+..\peripherals\c\serial_debug.c(171): warning:  #177-D: variable "uart_base"  was declared but never referenced
+     uint32_t uart_base;
+..\peripherals\c\serial_debug.c(172): warning:  #177-D: variable "tx_buffer"  was declared but never referenced
+     PC_Buffer *tx_buffer;
+..\peripherals\c\serial_debug.c(230): warning:  #177-D: variable "c"  was declared but never referenced
+      char c;
+..\peripherals\c\serial_debug.c: 3 warnings, 0 errors
+compiling lcd.c...
+compiling io_expander.c...
+..\peripherals\c\io_expander.c(174): warning:  #68-D: integer conversion resulted in a change of sign
+  	return -1;
+..\peripherals\c\io_expander.c: 1 warning, 0 errors
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=15628 RO-data=16384 RW-data=104 ZI-data=5128  
+".\obj\ece353_base_project.axf" - 0 Error(s), 17 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Project-F19
+  C:\Users\clare\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\Users\clare\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device\Source\system_TM4C123.c
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
